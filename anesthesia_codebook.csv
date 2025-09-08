@@ -1,0 +1,36 @@
+hcpcs,description
+00100,Anesthesia for procedures on salivary glands, including biopsy
+00102,Anesthesia for procedures involving plastic repair of cleft lip
+00103,Anesthesia for reconstructive procedures of eyelid (e.g., blepharoplasty, ptosis surgery)
+00104,Anesthesia for electroconvulsive therapy
+00120,Anesthesia for procedures on external, middle, and inner ear including biopsy; not otherwise specified
+00124,Anesthesia for procedures on external, middle, and inner ear including biopsy; otoscopy
+00126,Anesthesia for procedures on external, middle, and inner ear including biopsy; tympanotomy
+00140,Anesthesia for procedures on eye; not otherwise specified
+00142,Anesthesia for procedures on eye; lens surgery
+00144,Anesthesia for procedures on eye; corneal transplant
+00145,Anesthesia for procedures on eye; vitreoretinal surgery
+00147,Anesthesia for procedures on eye; iridectomy
+00148,Anesthesia for procedures on eye; ophthalmoscopy
+00160,Anesthesia for procedures on nose and accessory sinuses; not otherwise specified
+00162,Anesthesia for procedures on nose and accessory sinuses; radical surgery
+00164,Anesthesia for procedures on nose and accessory sinuses; biopsy, soft tissue
+00170,Anesthesia for intraoral procedures, including biopsy; not otherwise specified
+00172,Anesthesia for intraoral procedures, including biopsy; repair of cleft palate
+00174,Anesthesia for intraoral procedures, including biopsy; excision of retropharyngeal tumor
+00176,Anesthesia for intraoral procedures, including biopsy; radical surgery
+00190,Anesthesia for procedures on facial bones or skull; not otherwise specified
+00192,Anesthesia for procedures on facial bones or skull; radical surgery (including prognathism)
+00210,Anesthesia for intracranial procedures; not otherwise specified
+00211,Anesthesia for intracranial procedures; craniotomy or craniectomy for evacuation of hematoma
+00212,Anesthesia for intracranial procedures; subdural taps
+00214,Anesthesia for intracranial procedures; burr holes, including ventriculography
+00215,Anesthesia for intracranial procedures; cranioplasty or elevation of depressed skull fracture, extradural (simple or compound)
+00216,Anesthesia for intracranial procedures; vascular procedures
+00218,Anesthesia for intracranial procedures; procedures in sitting position
+00220,Anesthesia for intracranial procedures; cerebrospinal fluid shunting procedures
+00222,Anesthesia for intracranial procedures; electrocoagulation of intracranial nerve
+00300,Anesthesia for all procedures on the integumentary system, muscles and nerves of head, neck, and posterior trunk, not otherwise specified
+00320,Anesthesia for all procedures on esophagus, thyroid, larynx, trachea and lymphatic system of neck; not otherwise specified, age 1 year or older
+00322,Anesthesia for all procedures on esophagus, thyroid, larynx, trachea and lymphatic system of neck; needle biopsy of thyroid
+...
