@@ -1,0 +1,7 @@
+$schema: https://azuremlschemas.azureedge.net/promptflow/latest/AzureOpenAIConnection.schema.json
+name: cptazureOpenAI
+type: azure_open_ai
+api_base: https://cpt-azureopenai.openai.azure.com
+api_type: azure
+api_version: "2024-02-01"
+api_key: "BeIe8aEkG6XtYgAn7Gq8TVGwgn0uzW1T3s57MBAZwLgvINmYUHAnJQQJ99BIACYeBjFXJ3w3AAABACOGSECN"

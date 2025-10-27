@@ -10,7 +10,13 @@ from typing import List, Dict, Tuple, Optional
 
 #import pandas as pd
 from openai import AzureOpenAI
-from azure.identity import DefaultAzureCredential, get_bearer_token_provider
+
+def get_azure_client() -> AzureOpenAI:
+    return AzureOpenAI(
+        api_key=os.environ["3KWlTpjHd8xBUFEW06Q9Be1sr8NmUKJSRYBGwDbqGRXoxQqUwqszJQQJ99BIACYeBjFXJ3w3AAAAACOGi9gQ"],
+        azure_endpoint=ENDPOINT_URL,
+        api_version=API_VERSION,
+    )
 
 # ------------------------------------------------------------------------------
 # CONFIG
@@ -193,7 +199,7 @@ def pick_candidates(user_description: str, codes_in_file: List[str], codebook: D
 # ------------------------------------------------------------------------------
 # AZURE OPENAI CLIENT
 # ------------------------------------------------------------------------------
-
+"""
 def get_azure_client() -> AzureOpenAI:
     token_provider = get_bearer_token_provider(
         DefaultAzureCredential(),
@@ -205,7 +211,7 @@ def get_azure_client() -> AzureOpenAI:
         api_version=API_VERSION,
     )
     return client
-
+"""
 
 # ------------------------------------------------------------------------------
 # MODEL CALL: ask the model to choose the best code among candidates

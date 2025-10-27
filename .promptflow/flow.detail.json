@@ -1,0 +1,63 @@
+{
+  "flow_runs": [
+    {
+      "run_id": "324b0887-032c-43aa-8b17-23c5e64db4dc_0",
+      "status": "Failed",
+      "error": {
+        "message": "Execution failure in 'chat': (WrappedOpenAIError) OpenAI API hits NotFoundError: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} [Error reference: https://platform.openai.com/docs/guides/error-codes/api-errors]",
+        "messageFormat": "Execution failure in '{func_name}': {error_type_and_message}",
+        "messageParameters": {
+          "error_type_and_message": "(WrappedOpenAIError) OpenAI API hits NotFoundError: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} [Error reference: https://platform.openai.com/docs/guides/error-codes/api-errors]",
+          "func_name": "chat"
+        },
+        "referenceCode": "Unknown",
+        "code": "UserError",
+        "innerError": {
+          "code": "ScriptExecutionError",
+          "innerError": null
+        },
+        "additionalInfo": [
+          {
+            "type": "FlexFlowExecutionErrorDetails",
+            "info": {
+              "type": "WrappedOpenAIError",
+              "message": "OpenAI API hits NotFoundError: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} [Error reference: https://platform.openai.com/docs/guides/error-codes/api-errors]",
+              "traceback": "Traceback (most recent call last):\n  File \"/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/promptflow/core/_prompty_utils.py\", line 1084, in wrapper\n    return func(*args, **kwargs)\n  File \"/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/promptflow/core/_flow.py\", line 462, in __call__\n    response = send_request_to_llm(api_client, self._model.api, params, timeout)\n  File \"/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/promptflow/core/_prompty_utils.py\", line 201, in send_request_to_llm\n    result = client.with_options(timeout=timeout).chat.completions.create(**parameters)\n  File \"/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/promptflow/tracing/_integrations/_openai_injector.py\", line 95, in wrapper\n    return f(*args, **kwargs)\n  File \"/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/promptflow/tracing/_trace.py\", line 545, in wrapped\n    return func(*args, **kwargs)\n  File \"/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/openai/_utils/_utils.py\", line 279, in wrapper\n    return func(*args, **kwargs)\n  File \"/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/openai/resources/chat/completions/completions.py\", line 929, in create\n    return self._post(\n  File \"/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/openai/_base_client.py\", line 1276, in post\n    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))\n  File \"/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/openai/_base_client.py\", line 949, in request\n    return self._request(\n  File \"/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/openai/_base_client.py\", line 1057, in _request\n    raise self._make_status_error_from_response(err.response) from None\nopenai.NotFoundError: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}}\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/promptflow/tracing/_trace.py\", line 545, in wrapped\n    return func(*args, **kwargs)\n  File \"/Users/alichawro/CPT_Codes/flow.py\", line 20, in chat\n    output = prompty(question=question)\n  File \"/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/promptflow/tracing/_trace.py\", line 545, in wrapped\n    return func(*args, **kwargs)\n  File \"/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/promptflow/core/_prompty_utils.py\", line 1112, in wrapper\n    raise WrappedOpenAIError(e)\npromptflow.core._errors.WrappedOpenAIError: OpenAI API hits NotFoundError: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} [Error reference: https://platform.openai.com/docs/guides/error-codes/api-errors]\n"
+            }
+          }
+        ],
+        "debugInfo": {
+          "type": "ScriptExecutionError",
+          "message": "Execution failure in 'chat': (WrappedOpenAIError) OpenAI API hits NotFoundError: Error code: 404 - {'error': {'code': 'DeploymentNotFound', 'message': 'The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.'}} [Error reference: https://platform.openai.com/docs/guides/error-codes/api-errors]",
+          "stackTrace": "Traceback (most recent call last):\n",
+          "innerException": null
+        }
+      },
+      "inputs": {
+        "question": "What's the capital of France?"
+      },
+      "output": null,
+      "metrics": null,
+      "request": null,
+      "parent_run_id": "324b0887-032c-43aa-8b17-23c5e64db4dc",
+      "root_run_id": "324b0887-032c-43aa-8b17-23c5e64db4dc",
+      "source_run_id": null,
+      "flow_id": "default_flow_id",
+      "start_time": "2025-09-23T22:54:14.595194Z",
+      "end_time": "2025-09-23T22:54:15.404222Z",
+      "index": 0,
+      "api_calls": null,
+      "name": "",
+      "description": "",
+      "tags": null,
+      "system_metrics": {
+        "duration": 0.809028
+      },
+      "result": null,
+      "upload_metrics": false,
+      "otel_trace_id": null,
+      "message_format": "basic"
+    }
+  ],
+  "node_runs": []
+}
