@@ -9,8 +9,8 @@ inputs:
   question:
     type: string
     is_chat_input: true
-    default: |
-      What is Rorty's view on hope
+    default: Simple laceration repair, 2.5 cm, left forearm; local anesthesia; no
+      complications; performed in urgent care
 outputs:
   answer:
     type: string

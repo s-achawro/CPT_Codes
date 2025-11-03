@@ -4,6 +4,31 @@
     "chat.jinja2": {
       "type": "llm",
       "inputs": {
+        "visit_context": {
+          "type": [
+            "string"
+          ]
+        },
+        "diagnosis": {
+          "type": [
+            "string"
+          ]
+        },
+        "procedure_description": {
+          "type": [
+            "string"
+          ]
+        },
+        "policy_snippets": {
+          "type": [
+            "string"
+          ]
+        },
+        "prior_codes": {
+          "type": [
+            "string"
+          ]
+        },
         "chat_history": {
           "type": [
             "string"
